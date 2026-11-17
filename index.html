@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FREE AURA STORE™</title>
+<title>🎁 YOU WON!!! FREE AURA STORE™</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Orbitron:wght@700;900&display=swap');
 :root{--pink:#ff00d4;--cyan:#00f7ff;--acid:#dfff00;--purple:#8b00ff}
@@ -42,11 +42,70 @@ button{font-family:Orbitron;font-weight:900}
 .blink{animation:blink .35s infinite alternate}@keyframes blink{to{opacity:.1}}
 .tiny{font-size:12px;color:#c7a6ff;text-align:center}
 #preview{display:block;width:min(250px,65%);margin:15px auto;border:5px solid var(--acid);box-shadow:0 0 25px var(--pink);transform:rotate(2deg)}
+
+body.shake{animation:shake .12s infinite}
+@keyframes shake{0%{transform:translate(4px,2px)}25%{transform:translate(-4px,-3px)}50%{transform:translate(3px,-4px)}75%{transform:translate(-3px,4px)}100%{transform:translate(2px,-2px)}}
+.panel{animation:pborder 1s linear infinite}
+@keyframes pborder{50%{border-color:var(--pink);box-shadow:0 0 50px var(--pink),inset 0 0 40px #00f7ff66}}
+.card:hover{animation:spin .6s linear infinite}@keyframes spin{to{transform:rotate(360deg) scale(1.15)}}
+.dvd{position:fixed;z-index:5;pointer-events:none;font:900 26px Orbitron;padding:8px 12px;border:3px solid #fff;background:var(--pink);color:#fff;box-shadow:0 0 25px var(--cyan);white-space:nowrap}
+.trail{position:fixed;pointer-events:none;z-index:99;font-size:22px;animation:fade .8s forwards}
+@keyframes fade{to{opacity:0;transform:translateY(30px) scale(.2) rotate(180deg)}}
+#ticker{position:fixed;left:10px;bottom:56px;z-index:60;background:#fff;color:#111;font:700 14px Comic Neue;padding:10px 14px;border-left:8px solid #00c853;box-shadow:0 0 20px #000;max-width:260px;transition:transform .4s;transform:translateX(-120%)}
+#ticker.on{transform:none}
+#timer{position:fixed;top:0;left:0;right:0;z-index:70;background:red;color:#fff;font:900 15px Orbitron;text-align:center;padding:6px;animation:flash .3s infinite alternate}
+#sticky{position:fixed;right:10px;bottom:10px;z-index:60;font:900 16px Orbitron;background:var(--acid);color:#000;border:4px ridge #fff;padding:12px;animation:bounce .4s infinite alternate}
+body{padding-top:30px}
+
+.btn2{display:block;margin:14px auto;padding:14px 10px;width:min(480px,100%);font:900 clamp(16px,4vw,24px) Orbitron;color:#111;border:5px ridge #fff;border-radius:10px;animation:bounce .5s infinite alternate}
+.b-g{background:#00e676}.b-r{background:#ff1744;color:#fff}.b-y{background:#ffea00}.b-b{background:#2979ff;color:#fff}
+.ad{margin:18px auto;padding:12px;width:min(680px,100%);border:3px solid #fff;background:linear-gradient(90deg,#fff700,#ff9100);color:#111;text-align:center;font:900 20px Orbitron;position:relative;box-shadow:0 0 25px var(--acid)}
+.ad small{position:absolute;top:2px;right:6px;font:10px Arial;color:#333}
+.ad.alt{background:linear-gradient(90deg,#00e5ff,#2979ff);color:#fff}
+.ad.alt2{background:linear-gradient(90deg,#ff1744,#d500f9);color:#fff}
+.ad button{display:block;margin:8px auto 0;padding:8px 16px;font-size:16px;background:#fff;color:#000;border:3px outset #ccc;cursor:pointer}
+.side{position:fixed;top:90px;width:120px;z-index:40;padding:8px;font:900 13px Orbitron;text-align:center;border:3px solid #fff;color:#111;background:var(--acid);animation:wobble 1s ease-in-out infinite alternate}
+.side button{margin-top:6px;padding:6px;font-size:11px;width:100%;cursor:pointer}
+.side.l{left:4px}.side.r{right:4px;background:var(--cyan)}
+@media(max-width:1250px){.side{display:none}}
+.hspin{position:absolute;z-index:0;pointer-events:none;font-size:clamp(44px,9vw,90px);opacity:.85;animation:spin3 3s linear infinite}
+@keyframes spin3{to{transform:rotate(360deg)}}
+h1{position:relative;z-index:1}
+.imgwrap{position:relative;overflow:hidden;margin:15px 0;padding:25px 0;border:3px dashed var(--cyan);border-radius:14px;background:#14002a}
+.jib{position:absolute;inset:0;z-index:0;pointer-events:none}
+#preview{position:relative;z-index:1}
+.strip{position:absolute;left:-25%;width:150%;overflow:hidden;white-space:nowrap;padding:9px 0;font:900 20px Orbitron,Arial,sans-serif;box-shadow:0 0 22px currentColor}
+.strip .t{display:inline-block;animation:slide 9s linear infinite}
+.strip.rev .t{animation-direction:reverse}
+@keyframes slide{to{transform:translateX(-50%)}}
+.s1{top:10%;transform:rotate(-16deg);background:var(--acid);color:#170022}
+.s2{top:42%;transform:rotate(11deg);background:var(--pink);color:#fff}
+.s3{top:74%;transform:rotate(-6deg);background:var(--cyan);color:#170022}
+.s2 .t{animation-duration:6s}.s3 .t{animation-duration:12s}
 </style>
+<meta name="description" content="🚨 YOU WON 999,999 AURA 🚨 Claim before it expires. 100% FREE. No card needed.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://YOUR-SITE.vercel.app/">
+<meta property="og:site_name" content="FREE AURA STORE™ ✅ VERIFIED">
+<meta property="og:title" content="🎁 CONGRATULATIONS!!! YOU WON 999,999 AURA 🎁">
+<meta property="og:description" content="⚠️ ONLY 2 CLAIMS LEFT ⚠️ Your reward expires in 04:59. Tap NOW to claim your FREE AURA. 100% LEGIT ✅ NO REFUNDS">
+<meta property="og:image" content="https://YOUR-SITE.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🎁 YOU WON 999,999 AURA 🎁 CLAIM NOW">
+<meta name="twitter:description" content="⚠️ ONLY 2 CLAIMS LEFT ⚠️ Expires in 04:59 ✅ VERIFIED">
+<meta name="twitter:image" content="https://YOUR-SITE.vercel.app/og-image.png">
+<meta name="theme-color" content="#ff00d4">
 </head>
 <body>
+<div id="timer">⏰ REWARD EXPIRES IN <span id="tm">04:59</span> ⏰ 1,203 PEOPLE VIEWING</div>
+<div id="ticker"></div>
+<div class="side l">AD<br>SINGLE AURAS IN YOUR AREA<button onclick="downloadAura()">DOWNLOAD</button></div>
+<div class="side r">AD<br>1 WEIRD TRICK FOR RIZZ<button onclick="downloadAura()">DOWNLOAD</button></div>
+<div id="sticky">🔥 CLAIM NOW 🔥</div>
 <div class="marquee"><span>💸 FREE AURA STORE 💸 FREE AURA STORE 💸 DOWNLOAD NOW NOW NOW • أفضل متجر في العالم • 999999 AURA POINTS • NO REFUNDS • CLICK THE BIG BUTTON • 💸</span></div>
 <header>
+<div class="hspin" style="left:6%;top:25%;animation-duration:2.0s">🌀</div><div class="hspin" style="left:24%;top:62%;animation-duration:2.6s">💫</div><div class="hspin" style="left:42%;top:12%;animation-duration:3.2s">⭐</div><div class="hspin" style="left:60%;top:60%;animation-duration:3.8s">🎰</div><div class="hspin" style="left:78%;top:18%;animation-duration:4.4s">🪩</div><div class="hspin" style="left:90%;top:58%;animation-duration:5.0s">💥</div>
 <div class="rtl">مرحبا بك في متجر الهالة المجاني</div>
 <h1>FREE AURA<br>STORE™</h1>
 <div class="blink" style="color:var(--acid);font:900 18px Orbitron">⚡ 100% LEGIT • DEFINITELY NOT A WEBSITE ⚡</div>
@@ -56,10 +115,16 @@ button{font-family:Orbitron;font-weight:900}
 <div class="stamp">CERTIFIED???</div>
 <h2>CLAIM YOUR FREE AURA BUNDLE</h2>
 <p style="text-align:center;font-size:21px">Congratulations user!!! You have been chosen by the aura council.</p>
-<img id="preview" alt="Your extremely rare aura download preview">
+<div class="imgwrap"><div class="jib" id="jib"><div class="strip s1"><span class="t">مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • </span></div><div class="strip s2 rev"><span class="t">ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • </span></div><div class="strip s3"><span class="t">لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • </span></div></div><img id="preview" alt="Your extremely rare aura download preview"></div>
 <button class="download" onclick="downloadAura()">⬇ DOWNLOAD THE AURA ⬇</button>
 <div id="progress"><div id="bar"></div></div>
 <div id="status">WAITING FOR LEGENDARY USER INPUT...</div>
+<button class="btn2 b-g" onclick="downloadAura()">✅ REAL DOWNLOAD (NOT FAKE)</button>
+<button class="btn2 b-r" onclick="downloadAura()">🔥 DOWNLOAD HERE 🔥</button>
+<div class="ad "><small>Ad</small>🔥 HOT AURAS NEAR YOU 🔥<button onclick="downloadAura()">DOWNLOAD</button></div>
+<button class="btn2 b-y" onclick="downloadAura()">⬇ DOWNLOAD (FASTER) ⬇</button>
+<button class="btn2 b-b" onclick="downloadAura()">💎 DOWNLOAD PREMIUM AURA 💎</button>
+
 <div class="columns">
 <div class="card"><b>🔥 +999999 AURA</b><p>Instantly become 400% cooler.</p></div>
 <div class="card"><b>💎 FREE PREMIUM</b><p>Premium membership for 0 dollars.</p></div>
@@ -68,8 +133,10 @@ button{font-family:Orbitron;font-weight:900}
 <div class="card"><b>⚡ INFINITE RIZZ</b><p>May or may not work.</p></div>
 <div class="card"><b>🏆 TOP SECRET</b><p>Do not tell your refrigerator.</p></div>
 </div>
+<div class="ad alt"><small>Ad</small>DOCTORS HATE THIS ONE WEIRD AURA TRICK<button onclick="downloadAura()">CLICK TO LEARN</button></div><button class="btn2 b-g" onclick="downloadAura()">⬇ DOWNLOAD AGAIN ⬇</button>
 <div class="alert">🚨 FINAL WARNING: YOUR AURA IS LEAKING. DOWNLOAD IMMEDIATELY 🚨</div>
 <div class="rtl">اضغط هنا لتحميل الهالة مجاناً — عرض محدود جداً</div>
+<div class="ad alt2"><small>Ad</small>💸 EARN $5000/DAY FROM HOME WITH AURA 💸<button onclick="downloadAura()">START NOW</button></div><div class="ad "><small>Ad</small>YOUR PC HAS 0 AURA. SCAN NOW<button onclick="downloadAura()">DOWNLOAD SCANNER</button></div><button class="btn2 b-r" onclick="downloadAura()">🚨 LAST CHANCE DOWNLOAD 🚨</button>
 <p class="tiny">FREE AURA STORE INTERNATIONAL • LEGAL DEPARTMENT IS ON VACATION • this is a joke page</p>
 </section>
 </main>
@@ -97,6 +164,27 @@ for(let i=0;i<26;i++){
  el.style.left=Math.random()*100+'vw';el.style.animationDuration=(5+Math.random()*12)+'s';el.style.animationDelay=(-Math.random()*15)+'s';
  el.style.fontSize=(12+Math.random()*24)+'px';document.body.appendChild(el);
 }
+
+// ===== OVERSTIMULATION PACK =====
+// more floaters
+for(let i=0;i<70;i++){const el=document.createElement('div');el.className='floaty';el.textContent=['🔥','💎','👁️','💸','🗿','FREE','WIN!!','⚡','🎁','AURA'][i%10];el.style.left=Math.random()*100+'vw';el.style.animationDuration=(3+Math.random()*9)+'s';el.style.animationDelay=(-Math.random()*12)+'s';el.style.fontSize=(16+Math.random()*40)+'px';document.body.appendChild(el);}
+// DVD bouncers
+const dvds=['FREE AURA','CLICK ME','WIN!!!','100% REAL','+999 RIZZ'].map((t,i)=>{const d=document.createElement('div');d.className='dvd';d.textContent=t;document.body.appendChild(d);return{d,x:Math.random()*300,y:Math.random()*300,vx:2+i,vy:2.5+i*.7}});
+(function tick(){dvds.forEach(o=>{const w=innerWidth-o.d.offsetWidth,h=innerHeight-o.d.offsetHeight;o.x+=o.vx;o.y+=o.vy;if(o.x<0||o.x>w){o.vx*=-1;o.d.style.background=`hsl(${Math.random()*360},100%,50%)`}if(o.y<0||o.y>h){o.vy*=-1;o.d.style.background=`hsl(${Math.random()*360},100%,50%)`}o.d.style.transform=`translate(${o.x}px,${o.y}px)`});requestAnimationFrame(tick)})();
+// cursor trail
+let lt=0;addEventListener('pointermove',e=>{const n=Date.now();if(n-lt<40)return;lt=n;const t=document.createElement('div');t.className='trail';t.textContent=['✨','💎','🔥','💸','⭐'][Math.random()*5|0];t.style.left=e.clientX+'px';t.style.top=e.clientY+'px';document.body.appendChild(t);setTimeout(()=>t.remove(),800)});
+// shake on download hover
+const dl=document.querySelector('.download');dl.addEventListener('mouseenter',()=>document.body.classList.add('shake'));dl.addEventListener('mouseleave',()=>document.body.classList.remove('shake'));
+// countdown (loops)
+let secs=299;setInterval(()=>{secs=secs<=0?299:secs-1;tm.textContent=String(secs/60|0).padStart(2,'0')+':'+String(secs%60).padStart(2,'0')},1000);
+// fake social proof ticker
+const names=['xX_rizzlord_Xx','Jaden','aura_farmer69','Mohammed','Brayden','skibidi_sigma','Olivia','Kevin'];
+setInterval(()=>{ticker.innerHTML='✅ <b>'+names[Math.random()*names.length|0]+'</b> just claimed '+(Math.random()*9000+1000|0)+' AURA!';ticker.classList.add('on');setTimeout(()=>ticker.classList.remove('on'),2600)},3500);
+// flashing tab title
+const tt=['🎁 YOU WON!!!','⚠️ AURA LEAKING','🔥 CLAIM NOW','💎 FREE AURA'];let ti=0;setInterval(()=>document.title=tt[ti++%4],900);
+sticky.onclick=downloadAura;
+
+
 </script>
 </body>
 </html>
