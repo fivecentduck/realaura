@@ -12,7 +12,7 @@ body{margin:0;min-height:100vh;overflow-x:hidden;color:white;font-family:'Comic 
 background:radial-gradient(circle at 10% 20%,#ff00d455,transparent 25%),radial-gradient(circle at 90% 80%,#00eaff55,transparent 30%),repeating-linear-gradient(137deg,#100020 0 9px,#19002c 9px 18px)}
 body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:10;opacity:.11;background:repeating-linear-gradient(0deg,transparent 0 3px,#fff 4px)}
 header{text-align:center;padding:22px 8px 4px;position:relative}
-h1{font:900 clamp(38px,9vw,92px)/.9 Orbitron,sans-serif;color:#fff;margin:20px 0;text-shadow:4px 4px var(--pink),-4px -3px var(--cyan),0 0 30px var(--acid);animation:glitch .22s infinite alternate;transform:rotate(-2deg)}
+h1{font:900 clamp(30px,7vw,64px)/.9 Orbitron,sans-serif;color:#fff;margin:12px 0;text-shadow:4px 4px var(--pink),-4px -3px var(--cyan),0 0 30px var(--acid);animation:glitch .8s infinite alternate;transform:rotate(-2deg)}
 @keyframes glitch{from{filter:hue-rotate(0deg);text-shadow:4px 4px var(--pink),-4px -3px var(--cyan),0 0 30px var(--acid)}to{filter:hue-rotate(90deg);text-shadow:-3px 2px var(--cyan),4px -2px var(--pink),0 0 40px white}}
 .marquee{overflow:hidden;white-space:nowrap;background:var(--acid);color:#170022;font:900 18px Orbitron;padding:9px;box-shadow:0 0 25px var(--acid);transform:rotate(1.5deg) scale(1.03)}
 .marquee span{display:inline-block;animation:marq 8s linear infinite}
@@ -43,45 +43,39 @@ button{font-family:Orbitron;font-weight:900}
 .tiny{font-size:12px;color:#c7a6ff;text-align:center}
 #preview{display:block;width:min(250px,65%);margin:15px auto;border:5px solid var(--acid);box-shadow:0 0 25px var(--pink);transform:rotate(2deg)}
 
-body.shake{animation:shake .12s infinite}
-@keyframes shake{0%{transform:translate(4px,2px)}25%{transform:translate(-4px,-3px)}50%{transform:translate(3px,-4px)}75%{transform:translate(-3px,4px)}100%{transform:translate(2px,-2px)}}
 .panel{animation:pborder 1s linear infinite}
 @keyframes pborder{50%{border-color:var(--pink);box-shadow:0 0 50px var(--pink),inset 0 0 40px #00f7ff66}}
-.card:hover{animation:spin .6s linear infinite}@keyframes spin{to{transform:rotate(360deg) scale(1.15)}}
 .dvd{position:fixed;z-index:5;pointer-events:none;font:900 26px Orbitron;padding:8px 12px;border:3px solid #fff;background:var(--pink);color:#fff;box-shadow:0 0 25px var(--cyan);white-space:nowrap}
 .trail{position:fixed;pointer-events:none;z-index:99;font-size:22px;animation:fade .8s forwards}
 @keyframes fade{to{opacity:0;transform:translateY(30px) scale(.2) rotate(180deg)}}
 #ticker{position:fixed;left:10px;bottom:56px;z-index:60;background:#fff;color:#111;font:700 14px Comic Neue;padding:10px 14px;border-left:8px solid #00c853;box-shadow:0 0 20px #000;max-width:260px;transition:transform .4s;transform:translateX(-120%)}
 #ticker.on{transform:none}
-#timer{position:fixed;top:0;left:0;right:0;z-index:70;background:red;color:#fff;font:900 15px Orbitron;text-align:center;padding:6px;animation:flash .3s infinite alternate}
-#sticky{position:fixed;right:10px;bottom:10px;z-index:60;font:900 16px Orbitron;background:var(--acid);color:#000;border:4px ridge #fff;padding:12px;animation:bounce .4s infinite alternate}
+#timer{position:fixed;top:0;left:0;right:0;z-index:70;background:red;color:#fff;font:900 15px Orbitron;text-align:center;padding:6px;animation:flash .9s infinite alternate}
+#sticky{position:fixed;right:10px;bottom:10px;z-index:60;font:900 16px Orbitron;background:var(--acid);color:#000;border:4px ridge #fff;padding:12px;animation:bounce 1s infinite alternate}
 body{padding-top:30px}
 
-.btn2{display:block;margin:14px auto;padding:14px 10px;width:min(480px,100%);font:900 clamp(16px,4vw,24px) Orbitron;color:#111;border:5px ridge #fff;border-radius:10px;animation:bounce .5s infinite alternate}
+.btn2{display:block;margin:14px auto;padding:14px 10px;width:min(480px,100%);font:900 clamp(16px,4vw,24px) Orbitron;color:#111;border:5px ridge #fff;border-radius:10px;animation:bounce 1.2s infinite alternate}
 .b-g{background:#00e676}.b-r{background:#ff1744;color:#fff}.b-y{background:#ffea00}.b-b{background:#2979ff;color:#fff}
-.ad{margin:18px auto;padding:12px;width:min(680px,100%);border:3px solid #fff;background:linear-gradient(90deg,#fff700,#ff9100);color:#111;text-align:center;font:900 20px Orbitron;position:relative;box-shadow:0 0 25px var(--acid)}
-.ad small{position:absolute;top:2px;right:6px;font:10px Arial;color:#333}
-.ad.alt{background:linear-gradient(90deg,#00e5ff,#2979ff);color:#fff}
-.ad.alt2{background:linear-gradient(90deg,#ff1744,#d500f9);color:#fff}
-.ad button{display:block;margin:8px auto 0;padding:8px 16px;font-size:16px;background:#fff;color:#000;border:3px outset #ccc;cursor:pointer}
-.side{position:fixed;top:90px;width:120px;z-index:40;padding:8px;font:900 13px Orbitron;text-align:center;border:3px solid #fff;color:#111;background:var(--acid);animation:wobble 1s ease-in-out infinite alternate}
-.side button{margin-top:6px;padding:6px;font-size:11px;width:100%;cursor:pointer}
-.side.l{left:4px}.side.r{right:4px;background:var(--cyan)}
-@media(max-width:1250px){.side{display:none}}
-.hspin{position:absolute;z-index:0;pointer-events:none;font-size:clamp(44px,9vw,90px);opacity:.85;animation:spin3 3s linear infinite}
-@keyframes spin3{to{transform:rotate(360deg)}}
-h1{position:relative;z-index:1}
-.imgwrap{position:relative;overflow:hidden;margin:15px 0;padding:25px 0;border:3px dashed var(--cyan);border-radius:14px;background:#14002a}
-.jib{position:absolute;inset:0;z-index:0;pointer-events:none}
-#preview{position:relative;z-index:1}
-.strip{position:absolute;left:-25%;width:150%;overflow:hidden;white-space:nowrap;padding:9px 0;font:900 20px Orbitron,Arial,sans-serif;box-shadow:0 0 22px currentColor}
-.strip .t{display:inline-block;animation:slide 9s linear infinite}
-.strip.rev .t{animation-direction:reverse}
-@keyframes slide{to{transform:translateX(-50%)}}
-.s1{top:10%;transform:rotate(-16deg);background:var(--acid);color:#170022}
-.s2{top:42%;transform:rotate(11deg);background:var(--pink);color:#fff}
-.s3{top:74%;transform:rotate(-6deg);background:var(--cyan);color:#170022}
-.s2 .t{animation-duration:6s}.s3 .t{animation-duration:12s}
+.balbar{text-align:center;font:900 20px Orbitron;color:var(--acid);margin:8px 0 16px}
+.balbar b{color:#fff;text-shadow:0 0 12px var(--cyan)}
+.claimbtn{margin-left:10px;padding:8px 12px;font-size:13px;background:var(--acid);color:#170022;border:3px ridge #fff;cursor:pointer}
+.shop{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.item{position:relative;padding:10px;border:3px dashed var(--pink);background:linear-gradient(135deg,#310052,#10001e);box-shadow:0 0 16px #ff00d477;text-align:center;transition:transform .2s}
+.item:hover{transform:translateY(-5px)}
+.item img{display:block;width:100%;height:220px;object-fit:cover;border:3px solid var(--acid);background:#000}
+.item b{display:block;font:900 15px Orbitron;color:var(--cyan);margin:10px 0 4px}
+.item p{margin:0 0 8px;font-size:16px;min-height:42px}
+.pr{font:900 15px Orbitron;color:var(--acid);margin-bottom:8px}.pr s{color:#ff6b9a;font-size:12px;margin-right:4px}
+.buy{width:100%;padding:10px;font-size:14px;background:linear-gradient(90deg,var(--acid),var(--cyan));color:#170022;border:3px ridge #fff;cursor:pointer}
+.item.own .buy{background:linear-gradient(90deg,#00e676,#b9f6ca)}
+.tag{position:absolute;top:2px;left:2px;z-index:2;padding:4px 8px;font:900 11px Orbitron;color:#111}
+.COMMON{background:#bbb}.RARE{background:var(--cyan)}.EPIC{background:#c77dff}.LEGENDARY{background:var(--acid)}.MYTHIC{background:var(--pink);color:#fff}
+#toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,40px);opacity:0;z-index:300;background:#fff;color:#111;font:900 15px Orbitron;padding:12px 18px;border:4px solid var(--pink);transition:.3s;pointer-events:none;text-align:center;max-width:90vw}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+.sale{text-align:center;padding:14px 10px;margin:8px 0 22px;background:repeating-linear-gradient(45deg,#ff1744 0 20px,#d50000 20px 40px);border:4px solid var(--acid);color:#fff;font:900 clamp(22px,5vw,40px) Orbitron;text-shadow:2px 2px #000;box-shadow:0 0 30px #ff1744;animation:pulse 1.2s ease-in-out infinite alternate}
+.sale span{font-size:clamp(13px,3vw,20px);color:var(--acid)}.sale b{color:#fff}.sale small{font:700 14px Comic Neue;color:#fff;text-shadow:none}
+@keyframes pulse{to{transform:scale(1.02)}}
+.off{position:absolute;top:2px;right:2px;z-index:2;background:#ff1744;color:#fff;padding:4px 8px;font:900 12px Orbitron}
 </style>
 <meta name="description" content="🚨 YOU WON 999,999 AURA 🚨 Claim before it expires. 100% FREE. No card needed.">
 <meta property="og:type" content="website">
@@ -100,12 +94,11 @@ h1{position:relative;z-index:1}
 <body>
 <div id="timer">⏰ REWARD EXPIRES IN <span id="tm">04:59</span> ⏰ 1,203 PEOPLE VIEWING</div>
 <div id="ticker"></div>
-<div class="side l">AD<br>SINGLE AURAS IN YOUR AREA<button onclick="downloadAura()">DOWNLOAD</button></div>
-<div class="side r">AD<br>1 WEIRD TRICK FOR RIZZ<button onclick="downloadAura()">DOWNLOAD</button></div>
+<div id="toast"></div>
 <div id="sticky">🔥 CLAIM NOW 🔥</div>
 <div class="marquee"><span>💸 FREE AURA STORE 💸 FREE AURA STORE 💸 DOWNLOAD NOW NOW NOW • أفضل متجر في العالم • 999999 AURA POINTS • NO REFUNDS • CLICK THE BIG BUTTON • 💸</span></div>
 <header>
-<div class="hspin" style="left:6%;top:25%;animation-duration:2.0s">🌀</div><div class="hspin" style="left:24%;top:62%;animation-duration:2.6s">💫</div><div class="hspin" style="left:42%;top:12%;animation-duration:3.2s">⭐</div><div class="hspin" style="left:60%;top:60%;animation-duration:3.8s">🎰</div><div class="hspin" style="left:78%;top:18%;animation-duration:4.4s">🪩</div><div class="hspin" style="left:90%;top:58%;animation-duration:5.0s">💥</div>
+
 <div class="rtl">مرحبا بك في متجر الهالة المجاني</div>
 <h1>FREE AURA<br>STORE™</h1>
 <div class="blink" style="color:var(--acid);font:900 18px Orbitron">⚡ 100% LEGIT • DEFINITELY NOT A WEBSITE ⚡</div>
@@ -113,30 +106,27 @@ h1{position:relative;z-index:1}
 <main class="wrap">
 <section class="panel">
 <div class="stamp">CERTIFIED???</div>
-<h2>CLAIM YOUR FREE AURA BUNDLE</h2>
+<div class="sale">🔥 MEGA AURA SALE 🔥<br><span>UP TO 97% OFF EVERYTHING • ENDS IN <b id="saletm">04:59</b></span><br><small>CODE AURA90 ALREADY APPLIED • FREE SHIPPING (IT IS A JPG)</small></div>
+<h2>🛒 THE AURA SHOP 🛒</h2>
+<div class="balbar">YOUR AURA: <b id="aurabal">50,000</b> <button class="claimbtn" onclick="claimAura()">CLAIM FREE +10,000</button></div>
+<div class="shop" id="shop"></div>
+<p class="tiny">All items are paid for in AURA points. No real money. Items are memes. Do not tell your refrigerator.</p>
+<hr style="border:2px dashed var(--cyan);margin:30px 0">
+<h2>OR CLAIM YOUR FREE AURA BUNDLE</h2>
 <p style="text-align:center;font-size:21px">Congratulations user!!! You have been chosen by the aura council.</p>
-<div class="imgwrap"><div class="jib" id="jib"><div class="strip s1"><span class="t">مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • مجاني • اضغط هنا • تحميل • FREE AURA • xk39qzz • مبروك • !!! • عرض محدود • vbn7$#@ • الهالة • </span></div><div class="strip s2 rev"><span class="t">ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • ربحت • CLAIM • اربح الآن • zzqpw88 • حصري • +999 • متجر الهالة • mxk2?! • مليون • 100% حقيقي • </span></div><div class="strip s3"><span class="t">لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • لا تفوّت • plmq0x • تحميل مجاني • AURA.exe • سريع • qq9wzv# • جائزة • FREE • حقيقي • ttrb44& • </span></div></div><img id="preview" alt="Your extremely rare aura download preview"></div>
+<img id="preview" alt="Your extremely rare aura download preview">
 <button class="download" onclick="downloadAura()">⬇ DOWNLOAD THE AURA ⬇</button>
 <div id="progress"><div id="bar"></div></div>
 <div id="status">WAITING FOR LEGENDARY USER INPUT...</div>
 <button class="btn2 b-g" onclick="downloadAura()">✅ REAL DOWNLOAD (NOT FAKE)</button>
 <button class="btn2 b-r" onclick="downloadAura()">🔥 DOWNLOAD HERE 🔥</button>
-<div class="ad "><small>Ad</small>🔥 HOT AURAS NEAR YOU 🔥<button onclick="downloadAura()">DOWNLOAD</button></div>
 <button class="btn2 b-y" onclick="downloadAura()">⬇ DOWNLOAD (FASTER) ⬇</button>
 <button class="btn2 b-b" onclick="downloadAura()">💎 DOWNLOAD PREMIUM AURA 💎</button>
 
-<div class="columns">
-<div class="card"><b>🔥 +999999 AURA</b><p>Instantly become 400% cooler.</p></div>
-<div class="card"><b>💎 FREE PREMIUM</b><p>Premium membership for 0 dollars.</p></div>
-<div class="card"><b>🧠 BIG BRAIN</b><p>Download extra brain cells.</p></div>
-<div class="card"><b>🛸 ALIEN VERIFIED</b><p>Approved on Mars yesterday.</p></div>
-<div class="card"><b>⚡ INFINITE RIZZ</b><p>May or may not work.</p></div>
-<div class="card"><b>🏆 TOP SECRET</b><p>Do not tell your refrigerator.</p></div>
-</div>
-<div class="ad alt"><small>Ad</small>DOCTORS HATE THIS ONE WEIRD AURA TRICK<button onclick="downloadAura()">CLICK TO LEARN</button></div><button class="btn2 b-g" onclick="downloadAura()">⬇ DOWNLOAD AGAIN ⬇</button>
+<button class="btn2 b-g" onclick="downloadAura()">⬇ DOWNLOAD AGAIN ⬇</button>
 <div class="alert">🚨 FINAL WARNING: YOUR AURA IS LEAKING. DOWNLOAD IMMEDIATELY 🚨</div>
 <div class="rtl">اضغط هنا لتحميل الهالة مجاناً — عرض محدود جداً</div>
-<div class="ad alt2"><small>Ad</small>💸 EARN $5000/DAY FROM HOME WITH AURA 💸<button onclick="downloadAura()">START NOW</button></div><div class="ad "><small>Ad</small>YOUR PC HAS 0 AURA. SCAN NOW<button onclick="downloadAura()">DOWNLOAD SCANNER</button></div><button class="btn2 b-r" onclick="downloadAura()">🚨 LAST CHANCE DOWNLOAD 🚨</button>
+<button class="btn2 b-r" onclick="downloadAura()">🚨 LAST CHANCE DOWNLOAD 🚨</button>
 <p class="tiny">FREE AURA STORE INTERNATIONAL • LEGAL DEPARTMENT IS ON VACATION • this is a joke page</p>
 </section>
 </main>
@@ -167,24 +157,47 @@ for(let i=0;i<26;i++){
 
 // ===== OVERSTIMULATION PACK =====
 // more floaters
-for(let i=0;i<70;i++){const el=document.createElement('div');el.className='floaty';el.textContent=['🔥','💎','👁️','💸','🗿','FREE','WIN!!','⚡','🎁','AURA'][i%10];el.style.left=Math.random()*100+'vw';el.style.animationDuration=(3+Math.random()*9)+'s';el.style.animationDelay=(-Math.random()*12)+'s';el.style.fontSize=(16+Math.random()*40)+'px';document.body.appendChild(el);}
+for(let i=0;i<18;i++){const el=document.createElement('div');el.className='floaty';el.textContent=['🔥','💎','💸','🗿','⚡','🎁'][i%6];el.style.left=Math.random()*100+'vw';el.style.animationDuration=(8+Math.random()*12)+'s';el.style.animationDelay=(-Math.random()*12)+'s';el.style.fontSize=(16+Math.random()*24)+'px';document.body.appendChild(el);}
 // DVD bouncers
-const dvds=['FREE AURA','CLICK ME','WIN!!!','100% REAL','+999 RIZZ'].map((t,i)=>{const d=document.createElement('div');d.className='dvd';d.textContent=t;document.body.appendChild(d);return{d,x:Math.random()*300,y:Math.random()*300,vx:2+i,vy:2.5+i*.7}});
+const dvds=['FREE AURA','CLICK ME'].map((t,i)=>{const d=document.createElement('div');d.className='dvd';d.textContent=t;document.body.appendChild(d);return{d,x:Math.random()*300,y:Math.random()*300,vx:1.2+i*.5,vy:1.5+i*.4}});
 (function tick(){dvds.forEach(o=>{const w=innerWidth-o.d.offsetWidth,h=innerHeight-o.d.offsetHeight;o.x+=o.vx;o.y+=o.vy;if(o.x<0||o.x>w){o.vx*=-1;o.d.style.background=`hsl(${Math.random()*360},100%,50%)`}if(o.y<0||o.y>h){o.vy*=-1;o.d.style.background=`hsl(${Math.random()*360},100%,50%)`}o.d.style.transform=`translate(${o.x}px,${o.y}px)`});requestAnimationFrame(tick)})();
 // cursor trail
 let lt=0;addEventListener('pointermove',e=>{const n=Date.now();if(n-lt<40)return;lt=n;const t=document.createElement('div');t.className='trail';t.textContent=['✨','💎','🔥','💸','⭐'][Math.random()*5|0];t.style.left=e.clientX+'px';t.style.top=e.clientY+'px';document.body.appendChild(t);setTimeout(()=>t.remove(),800)});
-// shake on download hover
-const dl=document.querySelector('.download');dl.addEventListener('mouseenter',()=>document.body.classList.add('shake'));dl.addEventListener('mouseleave',()=>document.body.classList.remove('shake'));
 // countdown (loops)
-let secs=299;setInterval(()=>{secs=secs<=0?299:secs-1;tm.textContent=String(secs/60|0).padStart(2,'0')+':'+String(secs%60).padStart(2,'0')},1000);
+let secs=299;setInterval(()=>{secs=secs<=0?299:secs-1;tm.textContent=saletm.textContent=String(secs/60|0).padStart(2,'0')+':'+String(secs%60).padStart(2,'0')},1000);
 // fake social proof ticker
 const names=['xX_rizzlord_Xx','Jaden','aura_farmer69','Mohammed','Brayden','skibidi_sigma','Olivia','Kevin'];
-setInterval(()=>{ticker.innerHTML='✅ <b>'+names[Math.random()*names.length|0]+'</b> just claimed '+(Math.random()*9000+1000|0)+' AURA!';ticker.classList.add('on');setTimeout(()=>ticker.classList.remove('on'),2600)},3500);
+setInterval(()=>{ticker.innerHTML='✅ <b>'+names[Math.random()*names.length|0]+'</b> just bought '+ITEMS[Math.random()*ITEMS.length|0].n+'!';ticker.classList.add('on');setTimeout(()=>ticker.classList.remove('on'),2600)},3500);
 // flashing tab title
 const tt=['🎁 YOU WON!!!','⚠️ AURA LEAKING','🔥 CLAIM NOW','💎 FREE AURA'];let ti=0;setInterval(()=>document.title=tt[ti++%4],900);
 sticky.onclick=downloadAura;
 
 
+
+// ===== SHOP =====
+const ITEMS=[
+{n:"Andy Ankle Caller ID",d:"Incoming call. Do NOT accept. (Accept.)",p:4999,o:19999,r:"RARE",i:"img/p1.jpg"},
+{n:"Fisheye Bath Cat",d:"Sees everything. Hates water. One giant eye.",p:3499,o:12000,r:"COMMON",i:"img/p2.jpg"},
+{n:"Gym Shorts Cat Man",d:"Skipped leg day, cat day, and every day.",p:6969,o:42000,r:"EPIC",i:"img/p3.jpg"},
+{n:"Folkistan 100 Note",d:"Official currency of nowhere. Not legal tender.",p:9999,o:100000,r:"LEGENDARY",i:"img/p4.jpg"},
+{n:"PHONK Troll Hoodie",d:"+500 drift. Plays phonk by default.",p:12500,o:66666,r:"LEGENDARY",i:"img/p5.jpg"},
+{n:"Roblox Face Reveal",d:"Real face. Low poly body. Zero warnings.",p:2999,o:9999,r:"COMMON",i:"img/p6.jpg"},
+{n:"Anti-Social Drip Kid",d:"Chain, stripes, ripped jeans, no friends.",p:7777,o:30000,r:"EPIC",i:"img/p7.jpg"},
+{n:"Green Hoodie Chipmunk",d:"Squeaky voice. Immaculate drip.",p:5500,o:25000,r:"RARE",i:"img/p8.jpg"},
+{n:"Candy Cat Sugar Rush",d:"Blue tongue, endless candy, one haunted moon.",p:8888,o:35000,r:"EPIC",i:"img/p9.jpg"},
+{n:"Gummy Bear Quintet",d:"Five smiles. No blinking. Do not make eye contact.",p:4200,o:15000,r:"RARE",i:"img/p10.jpg"},
+{n:"Starfish Dog Hybrid",d:"Half starfish, half dog. Fully cursed.",p:25000,o:999999,r:"MYTHIC",i:"img/p11.jpg"}];
+let aura=50000;const owned=new Set();
+const fmt=n=>n.toLocaleString('en-US');
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),2200)}
+function renderShop(){document.getElementById('aurabal').textContent=fmt(aura);
+document.getElementById('shop').innerHTML=ITEMS.map((x,k)=>`<div class="item${owned.has(k)?' own':''}"><span class="tag ${x.r}">${x.r}</span><span class="off">-${Math.round((1-x.p/x.o)*100)}%</span><img src="${x.i}" alt="${x.n}" loading="lazy"><b>${x.n}</b><p>${x.d}</p><div class="pr"><s>${fmt(x.o)}</s>${fmt(x.p)} AURA</div><button class="buy" onclick="buyItem(${k})">${owned.has(k)?'⬇ DOWNLOAD':'🛒 BUY NOW'}</button></div>`).join('')}
+function buyItem(k){const x=ITEMS[k];
+if(owned.has(k)){const a=document.createElement('a');a.href=x.i;a.download=x.n.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'.jpg';document.body.appendChild(a);a.click();a.remove();toast('⬇ Downloading '+x.n);return}
+if(aura<x.p){toast('❌ NOT ENOUGH AURA. Claim some free aura!');return}
+aura-=x.p;owned.add(k);renderShop();toast('✅ PURCHASED: '+x.n+' (-'+fmt(x.p)+' AURA)')}
+function claimAura(){aura+=10000;renderShop();toast('💎 +10,000 FREE AURA')}
+renderShop();
 </script>
 </body>
 </html>
